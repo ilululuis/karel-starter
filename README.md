@@ -4,7 +4,9 @@ This project contains my Karel work for COSC 10001 at TCU. I use Java to guide a
 
 ## How to run it
 
-Open the project folder in IntelliJ, open `MyKarel.java`, and click the green ▶ button. When the robot window opens, press **Start**.
+Open the project folder in IntelliJ, open `MyKarel.java`, and click the green ▶ button.
+
+Load worlds/LuisStaircase.w, then press **Start**. Karel collects four beepers and finishes at (5,5).
 
 You can also run `run.ps1` on Windows or `bash run.sh` on macOS from the project folder.
 
