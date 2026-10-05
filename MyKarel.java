@@ -23,29 +23,23 @@ import stanford.karel.*;
 public class MyKarel extends Karel {
 
     public void run() {
-        turnLeft();
-        move();
-        turnRight();
-        move();
-        pickBeeper();
+        for (int step = 0; step < 4; step++) {
+            climbStep();
+            collectBeepers();
+        }
+    }
 
+    private void climbStep() {
         turnLeft();
         move();
         turnRight();
         move();
-        pickBeeper();
+    }
 
-        turnLeft();
-        move();
-        turnRight();
-        move();
-        pickBeeper();
-
-        turnLeft();
-        move();
-        turnRight();
-        move();
-        pickBeeper();
+    private void collectBeepers() {
+        while (beepersPresent()) {
+            pickBeeper();
+        }
     }
 
     private void turnRight() {
@@ -53,5 +47,4 @@ public class MyKarel extends Karel {
         turnLeft();
         turnLeft();
     }
-
 }
